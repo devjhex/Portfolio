@@ -1,5 +1,5 @@
 export async function initProjects() {
-    const res = await fetch('/data.json');
+    const res = await fetch('data.json');
     const projects = await res.json();
     const fragment = document.createDocumentFragment();
 
