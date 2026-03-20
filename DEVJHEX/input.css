@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primaryBlack: #000000;
+  --color-primaryWhite: #FFFFFF;
+  --color-text300: #AFB0B6;
+  --color-text200: #E6E6E6;
+  --color-brandColor: #9EFF00;
+  --color-text700:#262626;
+  --color-secondaryGray:#100E0E;
+  --font-family-primary: "Gantari", sans-serif;
+  --font-family-secondary: "Manrope", sans-serif;
+  --breakpoint-md:50rem;
+}
+
+
+@layer base {
+  @font-face {
+  font-family: "Gantari";
+  src: url("./assets/fonts/Gantari/Gantari-VariableFont_wght.woff2") format("woff2");
+  font-weight: 100 800 900;
+  font-style: normal italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("./assets/fonts/Manrope/Manrope-VariableFont_wght.woff2") format("woff2");
+  font-weight: 100 800 900;
+  font-style: normal italic;
+  font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Gantari", sans-serif;
+}
+
+  body {
+    @apply bg-black text-neutral-100 antialiased;
+  }
+
+  img {
+    @apply max-w-full h-auto;
+  }
+}
+
+@layer components {
+  #modal-title {
+    @apply text-2xl font-bold text-primaryWhite mb-4;
+  }
+
+  .modal-body h3 {
+    @apply text-lg font-semibold text-brandColor mt-6 mb-1;
+  }
+
+  .modal-body p {
+    @apply text-sm text-text300 leading-relaxed;
+  }
+
+  .modal-body a {
+    @apply text-brandColor underline;
+  }
+
+  .container-custom {
+    @apply max-w-6xl lg:max-w-7xl mx-auto px-2 md:px-8 lg:px-24;
+  }
+
+  .card-padding {
+    @apply p-4 lg:p-10;
+  }
+
+  .hero-title {
+    @apply text-[64px] md:text-[120px] leading-none tracking-tight;
+  }
+
+  .hero-subtitle {
+    @apply text-[32px] md:text-[42px] leading-snug text-neutral-300;
+  }
+
+  .badge {
+    @apply w-[95%] md:w-max inline-flex items-center justify-between
+           rounded-full
+           bg-white text-primaryBlack hover:bg-brandColor
+           pr-1.5 pl-5 pt-1.5 pb-1.5
+           text-sm transition-colors duration-300 ease-in-out cursor-pointer;
+  }
+
+  .menu {
+    @apply opacity-0 scale-95 pointer-events-none;
+  }
+
+  .menu.active {
+    @apply opacity-100 scale-100 pointer-events-auto;
+  }
+
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonah | Front-end Web Developer</title>
+    <meta name="description" content="Jonah is a front-end web developer building accessible, performant and modern web experiences that solve real business problems.">
+    <meta name="author" content="Jonah">
+    <meta name="keywords" content="front-end developer, web developer, responsive design, HTML, CSS, JavaScript, portfolio">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://devjhex.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://devjhex.com/">
+    <meta property="og:title" content="Jonah | Front-end Web Developer">
+    <meta property="og:description" content="Jonah is a front-end web developer building accessible, performant and modern web experiences that solve real business problems.">
+    <meta property="og:image" content="https://devjhex.com/assets/images/og-image.jpg">
+    <meta property="og:image:alt" content="Jonah - Front-end Web Developer">
+    <meta property="og:site_name" content="DevJhex">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://devjhex.com/">
+    <meta name="twitter:title" content="Jonah | Front-end Web Developer">
+    <meta name="twitter:description" content="Jonah is a front-end web developer building accessible, performant and modern web experiences that solve real business problems.">
+    <meta name="twitter:image" content="https://devjhex.com/assets/images/og-image.jpg">
+    <meta name="twitter:image:alt" content="Jonah - Front-end Web Developer">
+    <meta name="twitter:creator" content="@devjhex">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/images/devJhex.svg">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <meta name="theme-color" content="#000000">
+
+    <link href="output.css" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jonah",
+      "url": "https://devjhex.com",
+      "jobTitle": "Front-end Web Developer",
+      "sameAs": [
+        "https://twitter.com/devJhex",
+        "https://www.linkedin.com/in/jonah-ssegawa-6191a8270/",
+        "https://www.instagram.com/devjhex/",
+        "https://github.com/devjhex"
+      ]
+    }
+    </script>
+    <script src="src/app.js" type="module"></script>
+</head>
+<body class=" bg-black border-b border-gray-700">
+
+    <div id="home"  class="container-custom border-b border-gray-700">
+        <header class="p-4 border-r border-l border-gray-700">
+            <nav aria-label="Main navigation" class="flex items-center justify-between">
+                <div>
+                    <a href="#home"><img src="assets/images/devJhex.svg" alt="devJhex logo" class="w-40"></a>
+                    
+                </div>
+                
+                <div class="bg-text700 rounded-lg">
+                    <button  id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu" class="md:hidden p-2 border border-gray-700 rounded-lg">
+                    <span aria-hidden="true"><img src="/assets/Icon/menu.svg" alt=""></span>
+                    </button>
+                </div>
+                
+                <div id="mobile-menu" class="fixed z-30 top-4 right-4 w-48 md:static md:w-auto hidden md:block">
+                    <button id="close-menu-btn" aria-label="Close navigation menu" class="ml-auto block text-white text-2xl mb-2 md:hidden">
+                        <div class="bg-brandColor w-10">
+                            <img src="assets/images/close (1) (1).svg" alt="">
+                        </div>
+                    </button>
+                    <ul class="bg-primaryBlack border border-gray-700 p-3 space-y-1 md:flex md:space-y-0 md:space-x-6 md:border-0 md:p-0 md:bg-transparent">
+                        <li><a href="#home" class="block text-white text-center py-2 rounded-md hover:bg-gray-800 md:hover:bg-transparent md:hover:text-gray-400 transition-colors">Home</a></li>
+                        <li><a href="#projects" class="block text-white text-center py-2 rounded-md hover:bg-gray-800 md:hover:bg-transparent md:hover:text-gray-400 transition-colors">Projects</a></li>
+                        <li><a href="#about" class="block text-white text-center py-2 rounded-md hover:bg-gray-800 md:hover:bg-transparent md:hover:text-gray-400 transition-colors">About</a></li>
+                        <li><a href="#contact" class="block text-white text-center py-2 rounded-md hover:bg-gray-800 md:hover:bg-transparent md:hover:text-gray-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <a href="#contact" class="hidden md:block" aria-label="Book a 30 minute call">
+                    <button class="badge font-extrabold font-family-secondary md:flex" tabindex="-1">Book 30 Min Call
+                            <div class="bg-black rounded-full md:ml-2">
+                                <img class="w-8.5 h-8.5" src="assets/images/Icon/Icon/arrow-up-right.svg" alt="">
+                            </div>
+                    </button>
+                </a>
+            </nav>  
+        </header>
+    </div>
+
+    <main>
+
+        <div class="container-custom border-gray-700">
+            <section aria-labelledby="intro-heading" class="relative p-4 md:pb-8 border-r border-l border-gray-700">
+                <img src="assets/images/bgCurve.svg" fetchpriority="high" width="378" height="932" class="absolute inset-0 w-full h-full object-cover -z-10" alt="">
+
+                <div class="relative z-10">
+                    <div class="flex items-center justify-center p-4">
+                            <div class="w-40 h-10 relative bg-linear-to-b from-gray-800 to-black rounded-4xl flex items-center justify-center">
+                            <div class=" absolute bottom-4/5 -right-2">
+                                <img src="/assets/images/threeCurvesOp.svg" alt="" width="22" height="22" class="w-5">
+                            </div>
+                            <span class="">🖐️ Hello there!</span>
+                            </div>
+                    </div>
+                    <div class="pb-4 md:pb-8">
+                    <h1 id="intro-heading" class="text-6xl md:text-8xl lg:text-[120px] font-extrabold text-center"> <span>I'm </span> <span class="text-brandColor">Jonah</span>, 
+                        <span class="text-transparent [-webkit-text-stroke:1px_white] md:block">Front-end</span> 
+                        <span class="md:block text-transparent [-webkit-text-stroke:1px_white]">Web Developer</span></h1>
+                    </div>
+
+                    <div class="md:flex md:flex-row-reverse md:items-center md:justify-between">
+                        <div class="flex items-center justify-center">
+                        <img class="w-140.25" fetchpriority="high" width="3571" height="2127" src="/assets/images/heroJhex.avif" alt="Jonah - Front-end Web Developer">
+                        </div>
+
+                        <div class="md:w-90 md:h-43.5 md:p-4">
+                        <p class="py-4 md:text-xl text-center md:text-left">I build accessible, performant web experiences that solve real problems.</p>
+            
+                        <div class="flex items-center justify-center md:h-2/5 md:justify-start md:items-end">
+                            <a href="#contact" aria-label="Let's connect, go to contact section" class="w-full flex items-center justify-center md:justify-start">
+                                <button class="badge font-extrabold font-family-secondary md:flex" tabindex="-1">Let's connect
+                                    <div class="bg-black rounded-full md:block md:ml-2">
+                                        <img class="w-8.5 h-8.5" src="assets/images/Icon/Icon/arrow-up-right.svg" alt="">
+                                    </div>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                
+            </section>
+        </div>
+
+        <section aria-labelledby="services-heading" class="container-custom border-gray-700">
+            <h2 id="services-heading" class="sr-only">What I Do</h2>
+            
+            <div class="md:flex">
+                <div class="relative py-12 px-6 md:py-20 md:px-10 border-t border-r border-l border-gray-700">
+                <h3 class="font-extrabold text-2xl uppercase">Responsive Development</h3>
+                <p class="text-[14px] font-extralight">Websites that work perfectly on mobile, tablet and desktop</p>
+                </div>
+                
+                <div class="relative py-12 px-6 md:py-20 md:px-10 border-t border-r border-l border-gray-700">
+                    <h3 class="font-extrabold text-2xl uppercase">Clean and Scalable Code</h3>
+                    <p class="text-[14px] font-extralight">Maintainable code built with best practices and modern standards</p>
+                </div>
+            
+                <div class="relative py-12 px-6 md:py-20 md:px-10 border-t border-r border-l border-gray-700">
+                    <h3 class="font-extrabold text-2xl uppercase">Performance and Optimization</h3>
+                    <p class="text-[14px] font-extralight">Fast-loading experiences optimized for speed and efficiency</p>
+                </div>
+            </div>
+
+            <section id="about" aria-labelledby="welcome-heading" class="relative py-12 px-4 border-t border-r border-l border-gray-700">
+
+                <div class="md:p-4">
+                    <h2 id="welcome-heading" class="font-extrabold text-3xl md:text-5xl text-center md:leading-15">
+                        <span class="md:block">Welcome to my portfolio!</span> I'm a front-end web developer focused on building clean, modern and responsive websites. I create digital experiences that are fast, user-friendly and built to solve REAL business needs.</h2>
+                </div>
+                
+                <div class="py-4 md:flex md:items-center md:justify-center">
+                    <div class="flex items-center md:justify-center">
+                        <p class="inline mx-auto text-text300 border-b pb-4 md:pb-0 md:border-b-0 md:border-r md:pr-4 border-text300">Available for work</p>
+                    </div>
+                    <div class="flex items-center justify-center py-4 md:pl-4">
+                         <ul class="flex items-center gap-4">
+                        <li><a href="https://twitter.com/devJhex" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><img class="w-10" src="assets/images/twitterIcon.svg" alt=""></a></li>
+                        <li><a href="https://www.linkedin.com/in/jonah-ssegawa-6191a8270/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img class="w-10" src="assets/images/linkedinIcon.svg" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/devjhex/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><img class="w-10" src="assets/images/instagramIcon.svg" alt=""></a></li>
+                    </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- My approach section will be here -->
+
+        <!-- // projects section static code -->
+        <section id="projects" aria-labelledby="projects-heading" class="container-custom border-gray-700">
+            <div class="relative py-12 md:py-24 px-6 md:px-10 border-t border-r border-l border-gray-700 bg-secondaryGray md:flex md:items-center md:justify-between">
+                <div class="md:w-3/5">
+                    <h2 id="projects-heading" class="font-extrabold text-text300 text-xl flex items-center gap-2 pb-2"><img src="/assets/images/greenStar.svg" alt=""> Featured Works</h2>
+                    <h1 class="font-extrabold text-3xl md:pl-1">Project, Works</h1>
+                    <p class="text-[16px] font-extralight py-4">I blend creativity with technical expertise to deliver designs that are not only visually appealing but also functional and user-centered.</p>
+                </div>
+
+               <div>
+                <a href="https://github.com/devjhex" target="_blank" rel="noopener noreferrer" aria-label="View more work on GitHub, opens in new tab">
+                    <button class="badge font-extrabold font-family-secondary  md:flex" tabindex="-1">View more work in Github
+                             <div class="bg-black md:flex-row rounded-full md:block md:ml-2">
+                                 <img class="w-8.5 h-8.5" src="assets/images/Icon/Icon/arrow-up-right.svg" alt="">
+                             </div>
+                     </button>
+                </a>
+               </div>
+            </div>
+            </div>
+
+            <div id="projects-grid" class="p-4 flex flex-col items-center gap-4 md:flex-row md:flex-wrap md:items-stretch md:justify-center md:gap-4 border-l border-r border-gray-700"></div>
+        </section>
+
+        <!-- // Testimonial section static code will be here-->
+       
+        <!-- // Frequently Asked Questions static code. -->
+    
+        <section aria-labelledby="work-heading" class="container-custom border-gray-700">
+            <div class="relative py-12 px-6 border-t border-r border-l border-gray-700 bg-secondaryGray md:px-10 md:py-30">
+                <div class="md:py-5">
+                    <h2 id="work-heading" class="font-extrabold text-3xl md:text-[50px] md:text-center">Let's Work</h2>
+                    <p class="text-[16px] md:text-[20px] md:text-center md:w-4/5 md:mx-auto font-extralight py-4">Whether you're launching a startup, improving an existing product, or just exploring design possibilities — I’m here to help turn vision into experience.</p>
+                </div>
+                <div class="flex items-center justify-center">
+                     <button class="badge font-extrabold font-family-secondary md:flex" aria-label="Let's work with me, go to contact section">Let's work with me
+                            <div class="bg-black rounded-full md:block md:ml-2">
+                                <img class="w-8.5 h-8.5" src="assets/images/Icon/Icon/arrow-up-right.svg" alt="">
+                            </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Me Static code section -->
+        <section id="contact" aria-labelledby="Contact-heading" class="container-custom border-gray-700">
+            <div class="relative py-12 px-6 border-t border-r border-l border-gray-700 bg-secondaryGray md:flex md:items-center md:justify-evenly md:gap-2">
+               <div class="md:w-1/2 border-gray-700">
+                 <h2 id="projects-heading" class="font-extrabold text-text300 text-xl flex items-center gap-2 pb-2"><img src="/assets/images/greenStar.svg" alt="">Contact Me</h2>
+                    <h1 class="font-extrabold text-3xl md:text-[50px] md:pl-1">Get in touch</h1>
+                <p class="text-[16px] font-extralight py-4">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Blending creativity and functionality, I design user-focused digital products and responsive websites that not only look stunning but also deliver.</p>
+                
+               
+                
+                <div class="flex items-center justify-center py-4">
+                         <ul class="flex items-center gap-4">
+                        <li><a href="https://twitter.com/devJhex" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><img class="w-10" src="assets/images/twitterIcon.svg" alt=""></a></li>
+                        <li><a href="https://www.linkedin.com/in/jonah-ssegawa-6191a8270/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img class="w-10" src="assets/images/linkedinIcon.svg" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/devjhex/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><img class="w-10" src="assets/images/instagramIcon.svg" alt=""></a></li>
+                    </ul>
+               </div>
+               </div>
+
+
+               <div class="md:w-1/2">
+                    <form class="font-family-secondary" onsubmit="return false;">
+                        <div class="p-2 border-b border-gray-700 mb-4">
+                            <label for="fullname" class="sr-only">Full Name</label>
+                            <input class="w-full outline-0 bg-transparent" placeholder="Full Name" type="text" id="fullname" name="fullname" autocomplete="name" required>
+                        </div>
+                        
+                        <div class="p-2 border-b border-gray-700 mb-4">
+                            <label for="email" class="sr-only">Email Address</label>
+                            <input class="w-full outline-0 bg-transparent" placeholder="Email Address" type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+                        
+                        <div class="text-text300 p-2 border-b border-gray-700 mb-4">
+                            <label for="subject" class="sr-only">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="project">New Project</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="support">Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="p-2 border-b border-gray-700 mb-4">
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea class="w-full outline-0 bg-transparent resize-none" id="message" name="message" rows="5" placeholder="Message..." required></textarea>
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start">
+                            <button class="badge font-extrabold font-family-secondary md:flex" tabindex="-1">Send Message
+                                <div class="bg-black rounded-full md:ml-2">
+                                    <img class="w-8.5 h-8.5" src="assets/images/Icon/Icon/arrow-up-right.svg" alt="">
+                                </div>
+                        </button>
+                        </div>
+                    </form>
+               </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <div class="container-custom border-b border-gray-700">
+        <footer class="p-4 border-r border-l border-gray-700">
+            
+            <nav aria-label="Footer navigation">
+                 <ul class="p-4 flex items-center justify-center gap-4">
+                        <li><a href="#home" class="block text-white text-center py-2 rounded-md hover:bg-gray-800 md:hover:bg-transparent md:hover:text-gray-400 transition-colors">Home</a></li>
+                        <li><a href="#projects" class="block text-white text-center py-2 rounded-md hover:bg-gray-800 md:hover:bg-transparent md:hover:text-gray-400 transition-colors">Projects</a></li>
+                        <li><a href="#about" class="block text-white text-center py-2 rounded-md hover:bg-gray-800 md:hover:bg-transparent md:hover:text-gray-400 transition-colors">About</a></li>
+                        <li><a href="#contact" class="block text-white text-center py-2 rounded-md hover:bg-gray-800 md:hover:bg-transparent md:hover:text-gray-400 transition-colors">Contact</a></li>
+                    </ul>
+            </nav>
+            
+            <address class="p-7 rounded-2xl flex-row items-center justify-center">
+                <div class=" flex items-center justify-center">
+                    <a href="#home"><img class="w-40" src="/assets/images/devJhex.svg" alt="DevJhex"></a>
+                    
+                </div>
+            </address>
+            <div>
+                 <nav aria-label="Legal">
+                     <ul class="flex items-center justify-around md:justify-center md:gap-16 flex-row-reverse">
+                         <li class=""><a id="privacy-btn" href="/privacy">Privacy Policy</a></li>
+                         <li class=""><a id="terms-btn" href="/terms">Terms & Conditions</a></li>
+                     </ul>
+                 </nav>
+                 <p class="text-center p-4">&copy; 2026 devJhex. All rights reserved.</p>
+            </div>     
+        </footer>
+    </div>
+
+
+   <!-- Modal -->
+        <div id="legal-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" class="fixed inset-0 z-50 flex items-center justify-center" hidden>
+            <div class="relative w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-xl p-6 mx-4 bg-black">
+                    <button type="button" id="modal-close" aria-label="Close" class="absolute top-4 right-4 bg-white w-10 h-10 cursor-pointer">
+                        <img src="/assets/images/close (1) (1).svg" alt="" width="512" height="512">
+                    </button>
+                <h2 id="modal-title"></h2>
+                <div id="modal-body" class="modal-body"></div>
+            </div>
+        </div>
+</body>
+</html>
