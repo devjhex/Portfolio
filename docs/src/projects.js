@@ -1,6 +1,33 @@
-export async function initProjects() {
-    const res = await fetch('data.json');
-    const projects = await res.json();
+const projects = [
+  {
+    title: "Honey Movies",
+    description: "A movie discovery app powered by the TMDB API — search titles, watch trailers, and browse trending films in real time. Tackled dynamic HTML generation at scale and optimized rendering performance to keep the UI snappy.",
+    url: "https://devjhex-honey-movies.netlify.app/",
+    image: "assets/images/honeyMoviesThumb.webp"
+  },
+  {
+    title: "Learn with Eddie",
+    description: "A fully interactive quiz platform with multiple categories, score tracking, and instant feedback. Built to handle dynamic question rendering and complex user input flows cleanly with vanilla JS.",
+    url: "https://devjhex-quiz-app.netlify.app/",
+    image: "assets/images/learnWithEddie.webp"
+  },
+  {
+    title: "Threadex",
+    description: "A productivity tool that lets you write, split, and format Twitter threads before posting. Solved real string manipulation and array logic challenges while keeping the UX dead simple.",
+    objectFit: "contain",
+    url: "https://threadex.netlify.app/",
+    image: "assets/images/threadex.webp"
+  },
+  {
+    title: "MR.Driskell - Tattoo Shop",
+    description: "A polished business landing page for a tattoo studio — showcasing artist work, services, and booking info. Focused on strong visual layout, responsive design, and smooth interactive elements.",
+    objectFit: "contain",
+    url: "https://devjhex-dr-driskell.netlify.app/",
+    image: "assets/images/mr.DriskellThumbnail.webp"
+  }
+];
+
+export function initProjects() {
     const fragment = document.createDocumentFragment();
 
     projects.forEach(({ title, description, image, url, objectFit = 'cover' }) => {
