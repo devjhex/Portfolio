@@ -8,8 +8,8 @@
   --color-brandColor: #9EFF00;
   --color-text700:#262626;
   --color-secondaryGray:#100E0E;
-  --font-family-primary: "Gantari", sans-serif;
-  --font-family-secondary: "Manrope", sans-serif;
+  --font-family-primary: "Gantari", "Gantari Fallback", sans-serif;
+  --font-family-secondary: "Manrope", "Manrope Fallback", sans-serif;
   --breakpoint-md:50rem;
 }
 
@@ -24,6 +24,15 @@
 }
 
 @font-face {
+  font-family: "Gantari Fallback";
+  src: local("Arial");
+  size-adjust: 103.41%;
+  ascent-override: 91.87%;
+  descent-override: 24.18%;
+  line-gap-override: 0%;
+}
+
+@font-face {
   font-family: "Manrope";
   src: url("./assets/fonts/Manrope/Manrope-VariableFont_wght.woff2") format("woff2");
   font-weight: 100 800 900;
@@ -31,9 +40,18 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Manrope Fallback";
+  src: local("Trebuchet MS");
+  size-adjust: 97.25%;
+  ascent-override: 109.62%;
+  descent-override: 30.85%;
+  line-gap-override: 0%;
+}
+
 html {
     scroll-behavior: smooth;
-    font-family: "Gantari", sans-serif;
+    font-family: "Gantari", "Gantari Fallback", sans-serif;
 }
 
   body {

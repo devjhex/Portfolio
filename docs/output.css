@@ -61,8 +61,8 @@
     --color-brandColor: #9EFF00;
     --color-text700: #262626;
     --color-secondaryGray: #100E0E;
-    --font-family-primary: "Gantari", sans-serif;
-    --font-family-secondary: "Manrope", sans-serif;
+    --font-family-primary: "Gantari", "Gantari Fallback", sans-serif;
+    --font-family-secondary: "Manrope", "Manrope Fallback", sans-serif;
   }
 }
 @layer base {
@@ -300,23 +300,14 @@
   .inline {
     display: inline;
   }
-  .inline-block {
-    display: inline-block;
-  }
   .aspect-video {
     aspect-ratio: var(--aspect-video);
-  }
-  .h-3\/5 {
-    height: calc(3 / 5 * 100%);
   }
   .h-8\.5 {
     height: calc(var(--spacing) * 8.5);
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
-  }
-  .h-58\.25 {
-    height: calc(var(--spacing) * 58.25);
   }
   .h-full {
     height: 100%;
@@ -347,12 +338,6 @@
   }
   .w-max {
     width: max-content;
-  }
-  .max-w-4\/5 {
-    max-width: calc(4 / 5 * 100%);
-  }
-  .max-w-\[90\%\] {
-    max-width: 90%;
   }
   .max-w-lg {
     max-width: var(--container-lg);
@@ -395,9 +380,6 @@
   }
   .justify-center {
     justify-content: center;
-  }
-  .justify-start {
-    justify-content: flex-start;
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -473,12 +455,6 @@
   }
   .bg-primaryWhite {
     background-color: var(--color-primaryWhite);
-  }
-  .bg-red-600 {
-    background-color: var(--color-red-600);
-  }
-  .bg-red-700 {
-    background-color: var(--color-red-700);
   }
   .bg-secondaryGray {
     background-color: var(--color-secondaryGray);
@@ -600,10 +576,6 @@
     --tw-font-weight: var(--font-weight-extralight);
     font-weight: var(--font-weight-extralight);
   }
-  .font-semibold {
-    --tw-font-weight: var(--font-weight-semibold);
-    font-weight: var(--font-weight-semibold);
-  }
   .text-brandColor {
     color: var(--color-brandColor);
   }
@@ -679,11 +651,6 @@
       height: calc(2 / 5 * 100%);
     }
   }
-  .md\:h-3\/5 {
-    @media (width >= 50rem) {
-      height: calc(3 / 5 * 100%);
-    }
-  }
   .md\:h-43\.5 {
     @media (width >= 50rem) {
       height: calc(var(--spacing) * 43.5);
@@ -697,11 +664,6 @@
   .md\:w-1\/2 {
     @media (width >= 50rem) {
       width: calc(1 / 2 * 100%);
-    }
-  }
-  .md\:w-1\/3 {
-    @media (width >= 50rem) {
-      width: calc(1 / 3 * 100%);
     }
   }
   .md\:w-3\/5 {
@@ -737,11 +699,6 @@
   .md\:w-auto {
     @media (width >= 50rem) {
       width: auto;
-    }
-  }
-  .md\:max-w-1\/3 {
-    @media (width >= 50rem) {
-      max-width: calc(1 / 3 * 100%);
     }
   }
   .md\:max-w-none {
@@ -1033,15 +990,31 @@
     font-display: swap;
   }
   @font-face {
+    font-family: "Gantari Fallback";
+    src: local("Arial");
+    size-adjust: 103.41%;
+    ascent-override: 91.87%;
+    descent-override: 24.18%;
+    line-gap-override: 0%;
+  }
+  @font-face {
     font-family: "Manrope";
     src: url("./assets/fonts/Manrope/Manrope-VariableFont_wght.woff2") format("woff2");
     font-weight: 100 800 900;
     font-style: normal italic;
     font-display: swap;
   }
+  @font-face {
+    font-family: "Manrope Fallback";
+    src: local("Trebuchet MS");
+    size-adjust: 97.25%;
+    ascent-override: 109.62%;
+    descent-override: 30.85%;
+    line-gap-override: 0%;
+  }
   html {
     scroll-behavior: smooth;
-    font-family: "Gantari", sans-serif;
+    font-family: "Gantari", "Gantari Fallback", sans-serif;
   }
   body {
     background-color: var(--color-black);
